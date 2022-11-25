@@ -8,27 +8,28 @@ body{
     justify-content: center;
 }
 
-.container{
+.form{
     display: flex;
     background-color: rgb(207, 227, 245);
     border-radius: 15px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 40vh;
     padding: 5px;
     margin-top: 100px;
     width: 50%;
+    height: 60vh;
 }
 
 .form{
-    height: 60%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
 
-    justify-content: space-evenly;
+    
     padding: 5px;
+}
+.form form{
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 form input{
@@ -68,19 +69,22 @@ form input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(207, 219, 230);
+    background-color: rgba(151, 91, 1, 0.507);
     cursor: pointer;
 }
 
 .btn:hover{
-    background-color: rgb(192, 221, 247);
+    background-color: rgba(151, 91, 1, 0.185);
 }
 
 .btn:active{
-    background-color: rgb(255, 222, 195);
+    background-color: rgba(143, 178, 255, 0.144);
 }
 
 p{
     font-size: 16pt;
+}
 
+button{
+    border: none;
 }
