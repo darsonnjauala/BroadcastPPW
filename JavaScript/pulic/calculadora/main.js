@@ -32,3 +32,7 @@ function pow() {
 function mod() {
     resultado.innerHTML = parseInt(numero1.value) % parseInt(numero2.value);
 }
+
+function clean() {
+    resultado.innerText = "";
+}

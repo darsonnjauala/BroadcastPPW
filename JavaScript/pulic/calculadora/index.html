@@ -11,8 +11,8 @@
     <div class="container">
         <div class="form">
             <form action="">
-                <input type="text" placeholder="Numero 1" id="numero1">
-                <input type="text" placeholder="Numero 2" id="numero2">
+                <input type="text" placeholder="Numero 1" id="numero1" name="num">
+                <input type="text" placeholder="Numero 2" id="numero2" name="num">
             </form>
             <p>Resultado: </p>
             <div class="caixa">
@@ -20,7 +20,6 @@
             </div>
         </div>
         
-        <p>Que Operacacao deseja efectuar?</p>
         <div class="operacoes">
             <div id="add" class="btn" onclick='add();'>
                 <p>+</p>
@@ -40,12 +39,16 @@
             <div id="div" class="btn" onclick='mod();'>
                 <p>%</p>
             </div>
+            <div id="clear" class="btn" onclick='clean();'>
+                <p>C</p>
+            </div>
+            <!-- <button type="reset" for="num">c</button> -->
         </div>
-
+        
     </div>
 
     <script src="main.js">
-
+        
     </script>
 </body>
 </html>
