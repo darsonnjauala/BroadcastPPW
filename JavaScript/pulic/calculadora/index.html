@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="">
+                <input type="number" placeholder="Numero 1" id="numero1">
+                <input type="text" placeholder="Numero 2" id="numero2">
+            </form>
+            <p>Resultado: </p>
+            <div class="caixa">
+                <span></span>
+            </div>
+        </div>
+        
+        <p>Que Operacacao deseja efectuar?</p>
+        <div class="operacoes">
+            <div id="add" class="btn" onclick='add();'>
+                <p>+</p>
+            </div>
+            <div id="sub" class="btn" onclick='sub();'>
+                <p>-</p>
+            </div>
+            <div id="tim" class="btn" onclick='tim();'>
+                <p>*</p>
+            </div>
+            <div id="div" class="btn" onclick='div();'>
+                <p>/</p>
+            </div>
+            <div id="div" class="btn" onclick='pow();'>
+                <p>^</p>
+            </div>
+            <div id="div" class="btn" onclick='mod();'>
+                <p>%</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
