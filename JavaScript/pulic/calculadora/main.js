@@ -16,7 +16,13 @@ function tim() {
 }
 
 function div() {
-    resultado.innerHTML = parseInt(numero1.value) / parseInt(numero2.value);
+    res = parseInt(numero1.value) / parseInt(numero2.value);
+    if(res == Infinity){
+        resultado.innerHTML = "Eh impossivel"
+    }else {
+        resultado.innerHTML = res;
+        
+    }
 }
 
 function pow() {
@@ -24,11 +30,5 @@ function pow() {
 }
 
 function mod() {
-    res = parseInt(numero1.value) % parseInt(numero2.value);
-    if(res == 0){
-        resultado.innerHTML = "Eh impossivel"
-    }else {
-
-        resultado.innerHTML = res;
-    }
+    resultado.innerHTML = parseInt(numero1.value) % parseInt(numero2.value);
 }
