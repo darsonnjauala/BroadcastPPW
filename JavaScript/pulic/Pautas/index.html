@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h2>Calculo de media do aluno</h2>
+    <div class="container">
+        <h2 class="title">Calculo de media do aluno</h2>
 
-    <button type="" onclick="media()">Calcular media</button>
-    <div class="resultado">
+        <div class="notas">
+            <form action="">
+                <div class="n1">
+                    <input type="text" id="numero1" placeholder="Primeiro Numero">
+                </div>
+                <div class="n2">
+                    <input type="text" id="numero2" placeholder="Segundo Numero">
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="media()">Calcular media</button>
+                    <button type="reset" onclick="limpar()">Limpar</button>
+                </div>
+            </form>
+        </div>
+        <div class="texto">
+            <div class="resultado">
 
+            </div>
+            <div class="resultad">
+    
+            </div>
+        </div>
     </div>
 
     <script src="media.js">

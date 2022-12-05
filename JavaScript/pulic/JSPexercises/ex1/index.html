@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>BroadCast JS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <div class="padding-bottom--15" id="resultado"></div>
+              <form id="stripe-login">
+                <div class="field padding-bottom--24">
+                  <label for="email">Numero Dois</label>
+                  <input type="email" name="email">
+                </div>
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    <label for="password">Numero Dois</label>
+                  </div>
+                  <input type="password" name="password">
+                </div>
+                <div id="btns" class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="Random" onclick="gerar()">
+                  <input type="submit" name="submit" value="Window" onclick="abrirJanela()">
+                  <input type="submit" name="submit" value="Develop" onclick="abrirPag()">
+                  <input type="submit" name="submit" value="JS World!" onclick="alterarTitulo()">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer>
+
+  </script>
+</body>
+
+</html>
