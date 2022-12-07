@@ -19,23 +19,31 @@
         <div class="formbg-outer">
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
-              <div class="padding-bottom--15" id="resultado"></div>
+              <div class="padding-bottom--15" id="result">
+
+              </div>
+              <div class="padding-bottom--15" id="result2">
+
+              </div>
               <form id="stripe-login" action="#">
                 <div class="field padding-bottom--24">
-                  <label for="text">Numero Dois</label>
-                  <input type="text">
+                  <label>Numero Um</label>
+                  <input type="text" id="numero1">
                 </div>
                 <div class="field padding-bottom--24">
                   <div class="grid--50-50">
-                    <label for="text">Numero Dois</label>
+                    <label >Numero Dois</label>
                   </div>
-                  <input type="text" >
+                  <input type="text" id="numero2">
+                </div>
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    <label >Numero Tres</label>
+                  </div>
+                  <input type="text" id="numero3">
                 </div>
                 <div id="btns" class="field padding-bottom--24">
-                  <input type="submit" name="submit" value="Random" onclick="gerar()">
-                  <input type="submit" name="submit" value="Window" onclick="abrirJanela()">
-                  <input type="submit" name="submit" value="Develop" onclick="abrirPag()">
-                  <input type="submit" name="submit" value="JS World!" onclick="alterarTitulo()">
+                  <input type="submit" value="Executar" onclick="executar()">
                 </div>
               </form>
             </div>

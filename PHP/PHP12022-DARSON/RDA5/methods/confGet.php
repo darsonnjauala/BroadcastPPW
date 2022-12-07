@@ -25,10 +25,12 @@
             <label>Vaga a que se candidata</label>
         </div>
         <div class="user-box">
-            <input type="date" name="Data">
+            <input type="date" name="Data" value="<?= $_GET['Data'] ?>">
+            <label>Data de Nascimento</label>
         </div>
-        <div class="input-group">
-            <h4>Vaga : <?= $_GET['Vaga'] ?></h4>
+        <div class="user-box">
+            <input type="text" name="Nome" required="" value="<?= $_GET['Nivel'] ?>">
+            <label>Nivel Academico</label>
         </div>
 
         <button type="submit">

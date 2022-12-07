@@ -9,10 +9,10 @@ function abrirJanela(){
     window.open("http://www.apolitecnica.ac.mz", "_blank");
 }
 
-function winMensagem(){
+function abrirPag(){
     window.open("outro.html","_blank");
 }
-function titulo(){
-    let titulo = document.querySelector("title")    
+function alterarTitulo(){
+    let titulo = document.querySelector("#title")    
     titulo.innerHTML = "JS World!!!"
 }    
