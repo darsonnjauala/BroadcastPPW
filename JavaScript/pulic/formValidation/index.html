@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div id="registration-form" action="#">
+        <div class='fieldset'>
+        <legend>
+            <span class="req">*Required</span>
+            <div class="errors">
+                <span id="feedback"></span>
+            </div>
+        </legend>
+        <form action="#">
+            <div class='row'>
+            <label for='firstname'>Numero Um:  <span class="req">*</span></label>
+            <input type="number" placeholder="Numero Um" name='firstname' id='numero1'>
+            </div>
+            <div class='row'>
+            <label for="">Numero Dois: <span class="req">*</span></label>
+            <input type="number" placeholder="Numero Dois"  name='email' id="numero2">
+            </div>
+            <div class='row'>
+                <label for="email">Numero Tres: <span class="req" id="feedback">*</span></label>
+                <input type="number" placeholder="Numero Tres"  name='email' id="numero3">
+            </div>
+            <input type="submit" value="Executar" onclick="validar()">
+        </form>
+        </div>
+    </div>
+    
+  
+    <script src="script.js"></script>
+</body>
+</html>

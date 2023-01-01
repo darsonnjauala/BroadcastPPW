@@ -1,3 +1,6 @@
+<?php 
+    include_once('Conexao3.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,7 +15,7 @@
             <table>
                 <tr>
                     <td>Nome:</td>
-                    <td><input type="text" name="nome" /></td>
+                    <td><input type="text" name="nome" style="width:300px" /></td>
                 </tr>
                 <tr>
                     <td>Contacto</td>
@@ -31,32 +34,13 @@
         <?php
             if(isset($_POST['gravar'])){
                 if(!empty($_POST['nome']) && !empty($_POST['contacto']) && !empty($_POST['email'])){
-                    $conexao = mysqli_connect("localhost","root","74r80N","agenda");
-                    $sql="select * from contacto where contacto=".$_POST['contacto']." or email=".$_POST['email'];
-                    $result=mysqli_query($conexao, $sql);
-
-                    if($result){
-                        echo "O contacto ou email ja existem na agenda";
-                    }else{
-                        $nome=$_POST['nome'];
-                        $email=$_POST['email'];
-                        $contacto=$_POST['contacto'];
-                        $sql="insert into contacto(nome, contacto, email) values('{$nome}','{$contacto}','{$email}')";
-                        $result=mysqli_query($conexao, $sql);
-                        if($result){
-                            header('location:index.php');
-                        }else{
-                            echo "Ocorreu um erro ao gravar os dados";
-                        }
-                        echo "Clique no botao";
+                    $contacto=new Contacto(null,$_POST['nome'],$_POST['contacto'],$_POST['email']);
+                    criacao($contacto);
                 }
             }
             if(isset($_POST['cancelar'])){
-                header('location:index.php');
-
+                header('location:Index3.php');
             }
-        }
         ?>
-    
     </body>
 </html>
